@@ -93,13 +93,11 @@ class Vecteur3 extends Vecteur2 {
     }
 
     // String representation of the object including z
-    @Override
     public String toString() {
         return "X = " + getX() + " Y = " + getY() + " Z = " + getZ();
     }
 
     // Method to check equality with another Vecteur2 object, including z
-    @Override
     public boolean equals(Vecteur2 vecteur1) {
         // Note: It's necessary to override the equals method from the superclass
         // and include the comparison for z
@@ -111,7 +109,6 @@ class Vecteur3 extends Vecteur2 {
     }
 
     // Method to calculate the norm of the vector including z
-    @Override
     public float norme() {
         return (float) Math.sqrt(Math.pow(getX(), 2) + Math.pow(getY(), 2) + Math.pow(getZ(), 2));
     }
